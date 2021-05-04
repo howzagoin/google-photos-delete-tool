@@ -82,6 +82,8 @@ The script may not work as expected in case your internet speed is considerably 
 
 1) It checks and unchecks the photos, but doesn't delete them.
     - Use the [english language version of Google Photos](https://photos.google.com/?hl=en) and run the tool again.
+    - right-click and inspect the page delete button element, does the button class/label/title match the element selector? 
+      e.g. deleteButton: 'button[aria-label="Delete"]',
 
 2) It stops after deleting some images.
     - Increase the `DELETE_DELAY_CYCLE` by thousands of milliseconds as described in the [Debugging section](#Debugging).
